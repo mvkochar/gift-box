@@ -52,3 +52,119 @@
     height: 0;
     border: 1px solid #575D65;
 }
+
+.home-featured {
+    margin-top: 50px;
+}
+
+.home-bl-title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 64px;
+    text-align: center;
+    color: #363636;
+}
+
+.home-featured-box {
+    margin-top: 78px;
+    margin-left: 373px;
+    gap: 77px;
+}
+
+.home-featured-link {
+    display: block;
+    width: 168px;
+    margin: 15px auto;
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.home-bottom {
+    margin-top: 96px;
+    padding-bottom: 41px;
+    background: linear-gradient(180deg, rgba(167, 147, 133, 0.15) 0%, rgba(167, 147, 133, 0) 100%); 
+}   
+
+.home-follow {
+    padding-top: 53px;
+    background: url("/public/images/home-bottom-bg.png") no-repeat;
+    background-position-y: 89px;
+    background-position-x: 10px;
+}
+
+.home-follow-box {
+    margin-top: 78px;
+    margin-left: 405px;
+    margin-right: 380px;
+    gap: 112px;
+}
+
+.home-follow-insta {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.home-follow-link {
+    display: block;
+    width: 204px;
+    margin: 31px auto;
+    margin-bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    padding-left: 80px;
+    background: url("/public/images/instagram.png") no-repeat 40px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.home-folow-images {
+    gap: 10px;
+
+    .little-images {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+.home-partners {
+    margin-top: 83px;
+    padding-top: 45px;
+}
+
+.home-partners-box {
+    width: fit-content;
+    margin: 73px auto;
+    margin-bottom: 0;
+    gap: 60px;
+}
+
+.home-shipping {
+    margin-top: 5px;
+    margin-left: 429px;
+    gap: 245px;
+}
+
+.home-shipping-info {
+    gap: 41px;
+}
+
+.home-shipping-title {
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #363636;
+}

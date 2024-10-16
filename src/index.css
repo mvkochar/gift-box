@@ -59,3 +59,13 @@ body {
 .cur-p {
   cursor: pointer;
 }
+
+.page-top-btn {
+  display: block;
+  width: 60px;
+  height: 70px;
+  background-color: #D2E2DC;
+  border: 1px solid #D2E2DC;
+  border-radius: 2px;
+  cursor: pointer;
+}
