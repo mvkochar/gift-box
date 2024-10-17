@@ -1,0 +1,166 @@
+.catalogue-categories {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 393px;
+    padding-right: 399px;
+    background-color: #575D65;
+}
+
+.catalogue-categories-list {
+    list-style-type: none;
+
+    li {
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+.catalogue-breadcrumbs {
+    margin-top: 20px;
+    margin-left: 296px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+}
+
+.catatologue-caption {
+    margin-top: 19px;
+}
+
+.catatologue-caption-desc {
+    max-width: 1346px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 1.3pt;
+    color: #000;
+}
+
+.catalogue-main {
+    margin-top: 60px;
+    margin-left: 296px;
+    margin-right: 267px;
+}
+
+.catalogue-filter {
+    width: 319px;
+    padding-top: 32px;
+    padding-bottom: 41px;
+    background-color: rgba(167, 147, 133, 0.1);
+}
+
+.catalogue-filter-title {
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #363636;
+}
+
+.catalogue-filter-box {
+    margin-top: 28px;
+    margin-left: 24px;
+    flex-direction: column;
+    gap: 40px;
+
+    .filter-bl-title {
+        font-weight: 400;
+        font-size: 20px;
+        color: #363636;
+    }
+}
+
+.catatalogue-filter-price {
+    margin-top: 48px;
+
+    .price-info {
+        width: 250px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #363636;
+    }
+}
+
+.catalog-filter-colours {
+    width: 182px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+.catalog-filter-colours .check-bl,
+.catalog-filter-occasion .check-bl,
+.catalogue-filter-whom .check-bl {
+    align-items: center;
+    gap: 9px;
+}
+
+.catalog-filter-colours input,
+.catalog-filter-occasion input,
+.catalogue-filter-whom input {
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+
+.catalog-filter-colours label,
+.catalog-filter-occasion label,
+.catalogue-filter-whom label {
+    width: 36px;
+    font-size: 16px;
+    color: #363636;
+}
+
+.catalog-filter-occasion {
+    margin-top: 14px;
+    flex-direction: column;
+    row-gap: 8px;
+
+    button {
+        display: block;
+        width: fit-content;
+        margin: 13px auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        text-decoration: underline;
+        color: #979797;
+    }
+}
+
+.catalog-filter-occasion label {
+    width: fit-content;
+}
+
+.catalogue-filter-whom {
+    margin-top: 14px;
+    width: 178px;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+.catalogue-filter-submit {
+    display: block;
+    width: 140px;
+    margin: 38px auto;
+    margin-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #fff;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    color: #363636;
+}
+
+.catalogue-box {
+    flex-wrap: wrap;
+    column-gap: 26px;
+    row-gap: 30px;
+}

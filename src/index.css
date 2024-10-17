@@ -69,3 +69,12 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
+.page-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 64px;
+  text-align: center;
+  color: #363636;
+}

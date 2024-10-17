@@ -1,0 +1,28 @@
+.products_item {
+    width: 320px;
+}
+
+.products_item_title {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.products_item_info {
+    display: flex;
+    gap: 20px;
+    margin-top: 4px;
+    font-size: 22px;
+}
+
+.products_item_price {
+    font-weight: 500;
+    color: #363636;
+}
+
+.products_item_oldp {
+    text-decoration: line-through;
+    color: #575D65;
+}
