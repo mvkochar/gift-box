@@ -1,5 +1,46 @@
 .products_item {
     width: 320px;
+    position: relative;
+}
+
+.products_item_actions {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: 241px;
+    left: 22px;
+    opacity: 0;
+}
+
+.products_item_bag {
+    display: block;
+    width: 128px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 24.38px;
+    background: #fff url("/public/images/shopping-bag.png") no-repeat 80%;
+    background-position-y: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: left;
+    color: #363636;
+}
+
+.products_item_view {
+    display: block;
+    width: 119px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    background: #fff url("/public/images/arrow-view.png") no-repeat 80%;
+    border: 1px solid #000;
+    font-size: 24px;
+    color: #363636;
+}
+
+.products_item_actions:hover {
+    opacity: 1;
 }
 
 .products_item_title {

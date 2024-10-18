@@ -33,7 +33,7 @@ const Catalogue = () => {
                     just because, our artisanal products and luxe packaging will be sure to wow your recipients.
                 </p>
             </div>
-            <main className='catalogue-main d-f jc-sb'>
+            <main className='catalogue-main d-f'>
                 <div className="catalogue-filter">
                     <h3 className="catalogue-filter-title">Filter by:</h3>
                     <div className="catalogue-filter-box d-f">
@@ -97,39 +97,39 @@ const Catalogue = () => {
                         <div>
                             <h4 className="filter-bl-title">Occasion</h4>
                             <form action="" className='catalog-filter-occasion d-f'>
-                                 <div className="check-bl d-f">
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="birthday" id="birthday" />
                                     <label htmlFor="birthday">Birthday</label>
-                                 </div>
-                                 <div className="check-bl d-f">
+                                </div>
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="christmas" id="christmas" />
                                     <label htmlFor="christmas">Christmas</label>
-                                 </div>
-                                 <div className="check-bl d-f">
+                                </div>
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="newYear" id="newYear" />
                                     <label htmlFor="newYear">New Year</label>
-                                 </div>
-                                 <div className="check-bl d-f">
+                                </div>
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="babyShower" id="babyShower" />
                                     <label htmlFor="babyShower">Baby Shower</label>
-                                 </div>
-                                 <div className="check-bl d-f">
+                                </div>
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="wedding" id="wedding" />
                                     <label htmlFor="wedding">Wedding</label>
-                                 </div>
-                                 <div className="check-bl d-f">
+                                </div>
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="motherDay" id="motherDay" />
                                     <label htmlFor="motherDay">Mother’s Day</label>
-                                 </div>
-                                 <div className="check-bl d-f">
+                                </div>
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="fatherDay" id="fatherDay" />
                                     <label htmlFor="fatherDay">Father’s day</label>
-                                 </div>
-                                 <div className="check-bl d-f">
+                                </div>
+                                <div className="check-bl d-f">
                                     <input type="checkbox" name="valentineDay" id="valentineDay" />
                                     <label htmlFor="valentineDay">Valentine’s Day</label>
-                                 </div>
-                                 <button type="button">more</button>
+                                </div>
+                                <button type="button">more</button>
                             </form>
                         </div>
                         <div>
@@ -158,22 +158,62 @@ const Catalogue = () => {
                 </div>
                 <div className="catalogue-box d-f">
                     {
-                      ProductsList.filter((elem)=>elem.id < 6).map((product)=> {
-                        return (
-                            <ProductsItem
-                                key={product.id}
-                                id={product.id}
-                                image={product.image}
-                                title={product.title}
-                                price={product.price}
-                                oldPrice={product.oldPrice}
-                                isSale={product.isSale}
-                            />
-                        )
-                      })
+                        ProductsList.filter((elem) => elem.id < 6).map((product) => {
+                            return (
+                                <ProductsItem
+                                    key={product.id}
+                                    id={product.id}
+                                    image={product.image}
+                                    title={product.title}
+                                    price={product.price}
+                                    oldPrice={product.oldPrice}
+                                    isSale={product.isSale}
+                                />
+                            )
+                        })
                     }
                 </div>
             </main>
+            <div className="catalogue-added">
+                <div className="catalogue-box d-f">
+                    {
+                        ProductsList.filter((elem) => elem.id > 5 && elem.id < 14).map((product) => {
+                            return (
+                                <ProductsItem
+                                    key={product.id}
+                                    id={product.id}
+                                    image={product.image}
+                                    title={product.title}
+                                    price={product.price}
+                                    oldPrice={product.oldPrice}
+                                    isSale={product.isSale}
+                                />
+                            )
+                        })
+                    }
+                </div>
+            </div>
+            <div className="catalogue-recently">
+                <h3 className="catalogue-recently-title">Recently Viewed</h3>
+                <div className="catalogue-recently-box d-f">
+                    <ProductsItem
+                        id={ProductsList[2].id}
+                        image={ProductsList[2].image}
+                        title={ProductsList[2].title}
+                        price={ProductsList[2].price}
+                        oldPrice={ProductsList[2].oldPrice}
+                        isSale={ProductsList[2].isSale}
+                    />
+                    <ProductsItem
+                        id={ProductsList[5].id}
+                        image={ProductsList[5].image}
+                        title={ProductsList[5].title}
+                        price={ProductsList[5].price}
+                        oldPrice={ProductsList[5].oldPrice}
+                        isSale={ProductsList[5].isSale}
+                    />
+                </div>
+            </div>
         </>
     )
 }

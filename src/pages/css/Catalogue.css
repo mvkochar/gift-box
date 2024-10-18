@@ -43,6 +43,7 @@
     margin-top: 60px;
     margin-left: 296px;
     margin-right: 267px;
+    gap: 26px;
 }
 
 .catalogue-filter {
@@ -50,6 +51,7 @@
     padding-top: 32px;
     padding-bottom: 41px;
     background-color: rgba(167, 147, 133, 0.1);
+    flex-shrink: 0;
 }
 
 .catalogue-filter-title {
@@ -163,4 +165,30 @@
     flex-wrap: wrap;
     column-gap: 26px;
     row-gap: 30px;
+}
+
+.catalogue-added {
+    margin-top: 30px;
+    margin-left: 295px;
+    margin-right: 267px;
+}
+
+.catalogue-recently {
+    margin-top: 62px;
+    padding-top: 49px;
+    padding-bottom: 95px;
+    padding-left: 295px;
+    background-color: rgba(167, 147, 133, 0.1);
+}
+
+.catalogue-recently-title {
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.catalogue-recently-box {
+    margin-top: 48px;
+    gap: 26px;
 }

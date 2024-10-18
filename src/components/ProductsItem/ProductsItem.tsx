@@ -13,11 +13,15 @@ type ProductsItemProps = {
 const ProductsItem = ({id, image, title, price, oldPrice, isSale}:ProductsItemProps) => {
   return (
     <div className={classes.products_item}>
-        <div><img src={image} alt="product" /></div>
+        <div className={classes.products_item_img}><img src={image} alt="product" width={320}/></div>
+        <div className={classes.products_item_actions}>
+          <button className={classes.products_item_bag}>Add</button>
+          <a href="" className={classes.products_item_view}>View</a>
+        </div>
         <h3 className={classes.products_item_title}>{title}</h3>
         <div className={classes.products_item_info}>
-            <div className={classes.products_item_price}>£{price}</div>
-            <div className={isSale ? classes.products_item_oldp: "d-n"}>£{oldPrice}</div>
+            <div className={classes.products_item_price}>£ {price}</div>
+            <div className={isSale ? classes.products_item_oldp: "d-n"}>£ {oldPrice}</div>
         </div>
     </div>
   )
