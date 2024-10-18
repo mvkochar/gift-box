@@ -48,6 +48,7 @@
 
 .catalogue-filter {
     width: 319px;
+    height: fit-content;
     padding-top: 32px;
     padding-bottom: 41px;
     background-color: rgba(167, 147, 133, 0.1);
@@ -171,6 +172,42 @@
     margin-top: 30px;
     margin-left: 295px;
     margin-right: 267px;
+}
+
+.catalogue-added-actions {
+    width: fit-content;
+    margin: 53px auto;
+    margin-bottom: 0;
+    gap: 49px;
+}
+
+.catalogue-added-more {
+    display: block;
+    width: 140px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.catalogue-added-build {
+    display: block;
+    width: 189px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 1px solid #BAA598;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BAA598;
 }
 
 .catalogue-recently {

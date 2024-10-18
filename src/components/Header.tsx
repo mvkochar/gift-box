@@ -27,7 +27,7 @@ const Header = () => {
           <ul className="header-nav d-f d-f jc-sb">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/catalogue">Catalogue</Link></li>
-            <li><a href="">Build your box</a></li>
+            <li><Link to="/build-box">Build your box</Link></li>
             <li><a href="">Services</a></li>
             <li><a href="">Photo & Video</a></li>
             <li><a href="">Payment & Delivery</a></li>

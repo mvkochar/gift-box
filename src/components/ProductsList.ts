@@ -132,7 +132,88 @@ const ProductsList:TProduct[] = [
         price: "100",
         oldPrice: "",
         isSale: false
-    }
+    },
+
+    {
+        id: 14,
+        image: "/images/catalogue/15.png",
+        title: "Herbal Bath Tea Salts",
+        price: "8",
+        oldPrice: "",
+        isSale: false
+    },
+
+    {
+        id: 15,
+        image: "/images/catalogue/16.png",
+        title: "Illume Wish Votive Candle",
+        price: "9",
+        oldPrice: "10",
+        isSale: true
+    },
+
+    {
+        id: 16,
+        image: "/images/catalogue/17.png",
+        title: "Mebie Baby Night Sky Triangle Bib",
+        price: "8",
+        oldPrice: "9",
+        isSale: true
+    },
+
+    {
+        id: 17,
+        image: "/images/catalogue/18.png",
+        title: "Moonstruck Milk Chocolate Sea Salt Caramel Drops",
+        price: "9",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 18,
+        image: "/images/catalogue/19.png",
+        title: "Mom Fuel Speckled Ceramic Mug",
+        price: "12",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 19,
+        image: "/images/catalogue/20.png",
+        title: "Mrs. Stoneware Jewelry Dish",
+        price: "13",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 20,
+        image: "/images/catalogue/21.png",
+        title: "White Gold Speckled Jewelry Dish",
+        price: "10",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 21,
+        image: "/images/catalogue/22.png",
+        title: "Pink Magnolia Concrete Candle",
+        price: "25",
+        oldPrice: "30",
+        isSale: true   
+    },
+
+    {
+        id: 22,
+        image: "/images/catalogue/23.png",
+        title: "Peony Petite Shimmer Candle",
+        price: "18",
+        oldPrice: "20",
+        isSale: true   
+    },
 
 ]
 

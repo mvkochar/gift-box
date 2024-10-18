@@ -1,0 +1,49 @@
+.build-info {
+    height: 184px;
+    margin-top: 21px;
+    padding-top: 35px;
+    padding-left: 374px;
+    padding-right: 373px;
+    background-color: rgba(186, 165, 152, 0.1);
+}
+
+.build-info-item {
+    width: 331px;
+
+    .info-item-desc {
+        margin-top: 21px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        font-size: 18px;
+        letter-spacing: .11em;
+        color: #000;
+    }
+}
+
+.build-step-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #BAA598;
+}
+
+.build-step-one {
+    margin-top: 40px;
+}
+
+.build-step-subtitle {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #363636;
+}
+
+.build-step-one .build-step-wr {
+    margin-top: 50px;
+    margin-left: 296px;
+    margin-right: 267px;
+    gap: 26px;
+}
