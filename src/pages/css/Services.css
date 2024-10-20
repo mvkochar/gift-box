@@ -1,0 +1,99 @@
+.services-breadcrumbs {
+    margin-top: 20px;
+    margin-left: 296px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+}
+
+.services-caption {
+    margin-top: 19px;
+}
+
+.services-desc {
+    max-width: 1346px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: .11em;
+    color: #000;
+}
+
+.services-wr {
+    margin-top: 60px;
+    margin-left: 297px;
+    margin-right: 266px;
+    gap: 26px;
+}
+
+.services-box {
+    flex-wrap: wrap;
+    column-gap: 26px;
+    row-gap: 30px;
+}
+
+.services-added {
+    margin-top: 30px;
+    margin-left: 296px;
+    gap: 26px;
+}
+
+.services-specials {
+    margin-top: 15px;
+    padding-top: 68px;
+    padding-bottom: 46px;
+    padding-left: 91px;
+    padding-right: 91px;
+    gap: 50px;
+}
+
+.services-specials-item {
+    width: 546px;
+    height: 323px;
+    padding-top: 229px;
+    padding-left: 17px;
+
+    .specials-item-info {
+        width: 510px;
+        padding-top: 14px;
+        padding-bottom: 15px;
+        padding-left: 21px;
+        padding-right: 18px;
+        background-color: #fff;
+    } 
+    
+    .specials-item-title {
+        font-weight: 400;
+        font-size: 18px;
+        color: #000;
+    }
+
+    .specials-item-shop {
+        display: block;
+        width: 148px;
+        padding-top: 13px;
+        padding-bottom: 12px;
+        border: 1px solid #363636;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    &:nth-child(1) {
+        background: url("/public/images/specials1.png") no-repeat;
+    }
+
+    &:nth-child(2) {
+        background: url("/public/images/specials2.png") no-repeat;
+    }
+
+    &:nth-child(3) {
+        background: url("/public/images/specials1.png") no-repeat;
+    }
+
+}

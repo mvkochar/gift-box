@@ -29,7 +29,8 @@
     color: #BAA598;
 }
 
-.build-step-one {
+.build-step-one,
+.build-step-three {
     margin-top: 40px;
 }
 
@@ -41,9 +42,65 @@
     color: #363636;
 }
 
-.build-step-one .build-step-wr {
+.build-step-wr  {
     margin-top: 50px;
+    gap: 26px; 
+}
+
+.build-step-one .build-step-wr {
     margin-left: 296px;
     margin-right: 267px;
+}
+
+.build-step-more {
+    display: block;
+    width: 140px;
+    margin: 55px auto;
+    margin-bottom: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.build-step-two {
+    margin-top: 40px;
+    padding-top: 31px;
+    padding-bottom: 43px;
+    background-color: rgba(186, 165, 152, 0.1);
+}
+
+.build-step-two .build-step-wr {
+    padding-left: 297px;
+    padding-right: 266px;
+}
+
+.build-step-three {
+    margin-bottom: 41px;
+}
+
+.build-step-three .build-step-wr {
+    margin-left: 297px;
+    margin-right: 266px;
+}
+
+.build-bag {
+    width: fit-content;
+    margin: 53px auto;
+    margin-bottom: 0;
+    padding-left: 49px;
+    padding-right: 42px;
     gap: 26px;
+}
+
+.build-bag-title {
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #363636;
 }

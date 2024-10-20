@@ -215,6 +215,203 @@ const ProductsList:TProduct[] = [
         isSale: true   
     },
 
+    {
+        id: 23,
+        image: "/images/catalogue/24.png",
+        title: "Beige&white Gift Box",
+        price: "80",
+        oldPrice: "",
+        isSale: false   
+    },
+    
+    {
+        id: 24,
+        image: "/images/catalogue/25.png",
+        title: "Christmas Gift Box",
+        price: "80",
+        oldPrice: "96",
+        isSale: true   
+    },
+    
+    {
+        id: 25,
+        image: "/images/catalogue/26.png",
+        title: "Beige&Red Gift Box",
+        price: "80",
+        oldPrice: "96",
+        isSale: true   
+    },
+
+    {
+        id: 26,
+        image: "/images/catalogue/27.png",
+        title: "Dwell Box - Large",
+        price: "90",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 27,
+        image: "/images/catalogue/28.png",
+        title: "Large Little Lady Box - Harvest Flower",
+        price: "80",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 28,
+        image: "/images/catalogue/29.png",
+        title: "Best Day Ever Gift Box",
+        price: "100",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 29,
+        image: "/images/catalogue/30.png",
+        title: "Gift card",
+        price: "3",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 30,
+        image: "/images/catalogue/31.png",
+        title: "Gift card",
+        price: "3",
+        oldPrice: "4",
+        isSale: true   
+    },
+
+    {
+        id: 31,
+        image: "/images/catalogue/32.png",
+        title: "Baby gift card",
+        price: "3",
+        oldPrice: "4",
+        isSale: true   
+    },
+
+    {
+        id: 32,
+        image: "/images/catalogue/33.png",
+        title: "Valentine gift card",
+        price: "4",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 33,
+        image: "/images/catalogue/34.png",
+        title: "Simple white&Pink card",
+        price: "5",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 34,
+        image: "/images/catalogue/35.png",
+        title: "Gift card",
+        price: "3",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 35,
+        image: "/images/catalogue/36.png",
+        title: "special Christmas wrapping",
+        price: "10",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 36,
+        image: "/images/catalogue/37.png",
+        title: "Gift Box",
+        price: "8",
+        oldPrice: "10",
+        isSale: true   
+    },
+
+    {
+        id: 37,
+        image: "/images/catalogue/38.png",
+        title: "Gift Box",
+        price: "8",
+        oldPrice: "15",
+        isSale: true   
+    },
+
+    {
+        id: 38,
+        image: "/images/catalogue/39.png",
+        title: "Dwell Box - Large",
+        price: "10",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 39,
+        image: "/images/catalogue/40.png",
+        title: "White gift box",
+        price: "10",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 40,
+        image: "/images/catalogue/41.png",
+        title: "Best Day Ever Gift Box",
+        price: "10",
+        oldPrice: "",
+        isSale: false   
+    },
+
+    {
+        id: 41,
+        image: "/images/catalogue/42.png",
+        title: "Gift Box",
+        price: "8",
+        oldPrice: "",
+        isSale: false   
+    },
+    
+    {
+        id: 42,
+        image: "/images/catalogue/43.png",
+        title: "Perk Gift Box",
+        price: "15",
+        oldPrice: "",
+        isSale: false   
+    },
+       
+    {
+        id: 43,
+        image: "/images/catalogue/44.png",
+        title: "Gift Box",
+        price: "10",
+        oldPrice: "12",
+        isSale: true  
+    },
+
+    {
+        id: 44,
+        image: "/images/catalogue/45.png",
+        title: "Gift Box",
+        price: "15",
+        oldPrice: "18",
+        isSale: true  
+    },
 ]
 
 export default ProductsList

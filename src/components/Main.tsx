@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { BuildBox, Catalogue, Home } from '../pages'
+import { BuildBox, Catalogue, Home, Services } from '../pages'
 
 
 const Main = () => {
@@ -17,6 +17,10 @@ const Main = () => {
         <Route
           path='build-box'
           element={<BuildBox/>}
+        />
+        <Route
+          path='services'
+          element={<Services/>}
         />
     </Routes>
   )
