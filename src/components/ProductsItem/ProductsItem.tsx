@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './ProductsItem.module.css'
+import { Link } from 'react-router-dom'
 
 type ProductsItemProps = {
   id: number
@@ -17,7 +18,7 @@ const ProductsItem = ({ id, image, title, price, oldPrice, isSale, isActtons = t
       <div className={classes.products_item_img}><img src={image} alt="product" width={320} /></div>
       <div className={isActtons ? classes.products_item_actions : "d-n"}>
         <button className={classes.products_item_bag}>Add</button>
-        <a href="" className={classes.products_item_view}>View</a>
+        <Link to={`/card/${id}`} className={classes.products_item_view}>View</Link>
       </div>
       <h3 className={classes.products_item_title}>{title}</h3>
       <div className={classes.products_item_info}>

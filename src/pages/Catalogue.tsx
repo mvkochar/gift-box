@@ -1,11 +1,7 @@
 import React from 'react'
 import './css/Catalogue.css'
-import { Filter, ProductsItem, ProductsList } from '../components';
+import { Filter, ProductsItem, ProductsList, Recently } from '../components';
 import { Link } from 'react-router-dom';
-
-function valuetext(value: number) {
-    return `${value}°C`;
-}
 
 const Catalogue = () => {
     return (
@@ -75,27 +71,7 @@ const Catalogue = () => {
                     <Link to = "/build-box" className='catalogue-added-build'>Build Yor Box</Link>
                 </div>
             </div>
-            <div className="catalogue-recently">
-                <h3 className="catalogue-recently-title">Recently Viewed</h3>
-                <div className="catalogue-recently-box d-f">
-                    <ProductsItem
-                        id={ProductsList[2].id}
-                        image={ProductsList[2].image}
-                        title={ProductsList[2].title}
-                        price={ProductsList[2].price}
-                        oldPrice={ProductsList[2].oldPrice}
-                        isSale={ProductsList[2].isSale}
-                    />
-                    <ProductsItem
-                        id={ProductsList[5].id}
-                        image={ProductsList[5].image}
-                        title={ProductsList[5].title}
-                        price={ProductsList[5].price}
-                        oldPrice={ProductsList[5].oldPrice}
-                        isSale={ProductsList[5].isSale}
-                    />
-                </div>
-            </div>
+            <Recently/>
         </>
     )
 }
