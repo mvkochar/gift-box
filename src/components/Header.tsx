@@ -9,7 +9,7 @@ const Header = () => {
         <div><img src="/images/logo.svg" alt="Logo" /></div>
         <div className="header-actions d-f align-center">
           <div className='header-person'>
-            <img src="/images/person.png" alt="person" className='d-b' />
+            <div className="header-person-img"><img src="/images/person.png" alt="person" className='d-b' /></div> 
             <ul className="header-person-dropdown d-f">
               <li><a href="">My account</a></li>
               <li><a href="">My orders</a></li>
