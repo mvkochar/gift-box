@@ -10,7 +10,7 @@ const Header = () => {
         <div className="header-actions d-f align-center">
           <div className='header-person'>
             <div className="header-person-img"><img src="/images/person.png" alt="person" className='d-b' /></div> 
-            <ul className="header-person-dropdown d-f">
+            <ul className="header-person-dropdown">
               <li><a href="">My account</a></li>
               <li><a href="">My orders</a></li>
               <li><a href="">My returns</a></li>
@@ -19,7 +19,7 @@ const Header = () => {
             </ul>
           </div>
           <div><img src="/images/heart.png" alt="heart" /></div>
-          <a href="" className="d-b"><img src="/images/shopping-bag.png" alt="shopping-bag" /></a>
+          <Link to="/bag" className="d-b"><img src="/images/shopping-bag.png" alt="shopping-bag" /></Link>
         </div>
       </div>
       <div className="header-bar">
@@ -29,10 +29,7 @@ const Header = () => {
             <li><Link to="/catalogue">Catalogue</Link></li>
             <li><Link to="/build-box">Build your box</Link></li>
             <li><Link to="/services">Services</Link></li>
-            <li><a href="">Photo & Video</a></li>
-            <li><a href="">Payment & Delivery</a></li>
-            <li><a href="">Guarantee & Return</a></li>
-            <li><a href="">F.A.Q.</a></li>
+            <li><Link to="/faq">F.A.Q.</Link></li>
             <li><Link to="/testimonials">Testimonials</Link></li>
           </ul>
          </nav>

@@ -15,6 +15,13 @@ const Card = () => {
     let index = parseInt(a)
     const currentProduct = ProductsList[index]
 
+    const addToBag = (productId: number, productsCount: number) => {
+       
+        localStorage.setItem(productId.toString(), productsCount.toString())
+    }
+
+    const [quantity, setQuantity] = React.useState(1)
+
     return (
         <>
             <div className="card-breadcrumbs">Home/ Catalogue/ {currentProduct.title}</div>
@@ -38,11 +45,11 @@ const Card = () => {
                         <div className="card-main-quantity">
                             <div className="quantity-title">Quantity</div>
                             <div className="quantity-select-bl">
-                                <select name="quantity">
+                                <select name="quantity" onChange={(e)=>setQuantity(parseInt(e.target.value))}>
                                     {
                                         nums.map((num) => {
                                             return (
-                                                <option value={num.toString()} key={num}>{num}</option>
+                                                <option value={num.toString()} key={num} >{num}</option>
                                             )
                                         })
                                     }
@@ -50,7 +57,7 @@ const Card = () => {
                             </div>
                         </div>
                         <div className="card-main-actions d-f align-center">
-                            <button className='card-main-add'>Add to bag</button>
+                            <button className='card-main-add' onClick={()=>addToBag(index, quantity)}>Add to bag</button>
                             <button className='card-main-like'><img src="/images/heart.png" alt="heart" /></button>
                         </div>
                     </div>

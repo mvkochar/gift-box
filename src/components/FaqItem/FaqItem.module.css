@@ -1,0 +1,25 @@
+.faq_item {
+    max-width: 1268px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.no_border {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.faq_item_question {
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.faq_item_answer {
+    max-width: 1212px;
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #363636;
+}

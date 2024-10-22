@@ -1,0 +1,19 @@
+.faq-breadcrumbs {
+    margin-top: 20px;
+    margin-left: 296px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+}
+
+.faq-caption {
+    margin-top: 19px;
+}
+
+.faq-box {
+    margin-top: 47px;
+    margin-bottom: 50px;
+    margin-left: 330px;
+    flex-direction: column;
+    gap: 15px;
+}

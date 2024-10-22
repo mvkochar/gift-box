@@ -14,7 +14,7 @@
 }
 
 .header-person-dropdown {
-    opacity: 0;
+    display: none;
     width: 224px;
     list-style-type: none;
     padding-top: 25px;
@@ -41,7 +41,7 @@
 }
 
 .header-person:hover .header-person-dropdown {
-    opacity: 1;
+   display: flex;
 }
 
 .header-bar {
