@@ -2,8 +2,13 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { Bag, BuildBox, Card, Catalogue, Faq, Home, Services, Testimonials } from '../pages'
 
+type MainProps = {
+  total: string
+  handleTotal: (productPrice: string) => void  
+}
 
-const Main = () => {
+
+const Main = ({total, handleTotal}:MainProps) => {
   return (
     <Routes>
       <Route
@@ -24,7 +29,7 @@ const Main = () => {
       />
       <Route
         path='card/:id'
-        element={<Card />}
+        element={<Card handleTotal={handleTotal} />}
       />
       <Route
         path='testimonials'
@@ -36,7 +41,7 @@ const Main = () => {
       />
       <Route
         path='bag'
-        element={<Bag/>}
+        element={<Bag total={total} handleTotal={handleTotal}/>}
       />
     </Routes>
   )

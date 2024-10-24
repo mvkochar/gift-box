@@ -3,24 +3,30 @@ import './css/Card.css'
 import { useParams } from 'react-router-dom'
 import { ProductsList, Recently } from '../components'
 
+type CardProps = {
+    handleTotal: (productPrice: string) => void  
+}
+
 const nums: number[] = []
 
 for (let i = 0; i < 20; i++) {
     nums[i] = i + 1
 }
 
-const Card = () => {
+const Card = ({handleTotal}:CardProps) => {
     const { id } = useParams<string>()
     let a = id ? id : '0'
     let index = parseInt(a)
     const currentProduct = ProductsList[index]
+    const [quantity, setQuantity] = React.useState(parseInt(localStorage.getItem(currentProduct.id.toString()) || "1"))
+    const [isAdded, setIsAdded] = React.useState(localStorage.getItem(currentProduct.id.toString()) != null)
 
     const addToBag = (productId: number, productsCount: number) => {
-       
         localStorage.setItem(productId.toString(), productsCount.toString())
+        console.log((parseFloat(currentProduct.price) * productsCount).toString())
+        handleTotal((parseFloat(currentProduct.price) * productsCount).toString())
+        setIsAdded(true)
     }
-
-    const [quantity, setQuantity] = React.useState(1)
 
     return (
         <>
@@ -45,7 +51,10 @@ const Card = () => {
                         <div className="card-main-quantity">
                             <div className="quantity-title">Quantity</div>
                             <div className="quantity-select-bl">
-                                <select name="quantity" onChange={(e)=>setQuantity(parseInt(e.target.value))}>
+                                <select name="quantity" value={quantity} 
+                                        onChange={(e)=>setQuantity(parseInt(e.target.value))}
+                                        disabled={isAdded ? true : false}
+                                >
                                     {
                                         nums.map((num) => {
                                             return (
@@ -57,7 +66,13 @@ const Card = () => {
                             </div>
                         </div>
                         <div className="card-main-actions d-f align-center">
-                            <button className='card-main-add' onClick={()=>addToBag(index, quantity)}>Add to bag</button>
+                            <button 
+                                className={isAdded ? 'card-main-add add-disabled' : 'card-main-add' }
+                                onClick={()=>addToBag(index, quantity)}
+                                disabled ={isAdded ? true : false}
+                            >
+                                Add to bag
+                            </button>
                             <button className='card-main-like'><img src="/images/heart.png" alt="heart" /></button>
                         </div>
                     </div>

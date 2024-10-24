@@ -1,3 +1,53 @@
 .bag-caption {
     margin-top: 60px;
 }
+
+.bag-box {
+    margin-top: 31px;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.bag-total {
+    margin-top: 15px;
+    margin-left: 296px;
+    margin-right: 273px;
+    padding-top: 34px;
+    padding-bottom: 27px;
+    padding-right: 5px;
+    background-color: rgba(167, 147, 133, 0.1);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #000;
+
+    span {
+        margin-left: 77px;
+    }
+}
+
+.bag-note {
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F08080;
+}
+
+.bag-shop-link {
+    display: block;
+    width: 140px;
+    margin: 50px auto;
+    margin-bottom: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+    border: 1px solid #363636;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}

@@ -1,29 +1,14 @@
 import React from 'react'
 import './css/Bag.css'
-import { ProductsList } from '../components'
+import { BagItem, ProductsList } from '../components'
+import { Link } from 'react-router-dom'
 
-type ProductCount = {
-    productId: number
-    quantity: number
+type BagProps = {
+    total: string
+    handleTotal: (productPrice: string) => void
 }
-let ProductsCountList: ProductCount[] = []
 
-const Bag = () => {
-   
-    let i: number
-    let key: number
-    let count: string
-    let t:ProductCount
-
-    
-    for (i = 0; i < localStorage.length; i++) {
-        key = parseInt((localStorage.key(i) || "0"));
-        count = localStorage.getItem(key.toString()) || "1"
-        t = {productId: key, quantity: parseInt(count)}
-        ProductsCountList.push(t)
-    }
- 
-  console.log(ProductsCountList)
+const Bag = ({ total, handleTotal }: BagProps) => {
 
     return (
         <>
@@ -31,13 +16,32 @@ const Bag = () => {
                 <h1 className="page-title">Frequently asked questions</h1>
             </section>
             <main>
-                <div className="bag-box">
-                    <div className="bag-item">
-                        {
-                          ProductsCountList.length
-                        }
-                    </div>
-                </div>
+                {
+                    total === '0' ?
+                        <>
+                            <h3 className='bag-note'>No Item</h3>
+                            <Link to='/catalogue' className='bag-shop-link'>Shop now</Link>
+                        </>
+                        :
+                        <>
+                            <div className="bag-box d-f">
+                                {
+                                    ProductsList.filter((elem) => localStorage.getItem(elem.id.toString()) != null).map((product) => {
+                                        return (
+                                            <BagItem
+                                                key={product.id}
+                                                productId={product.id}
+                                                productQuantity={parseInt(localStorage.getItem(product.id.toString() || "0") || '0')}
+                                                handleTotal={handleTotal}
+                                            />
+                                        )
+                                    })
+                                }
+                            </div>
+                            <div className="bag-total">Total: <span>£ {total}</span> </div>
+                        </>
+                }
+
             </main>
         </>
     )

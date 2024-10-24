@@ -1,12 +1,13 @@
 import React from 'react'
 import './css/Home.css'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <>
       <main className='home-main'>
         <h1 className="home-main-title">Gift box with Style</h1>
-        <a href="" className="home-main-shop">Shop now</a>
+        <Link to="/catalogue" className="home-main-shop">Shop now</Link>
       </main>
       <div className="home-about">
         We think gift giving is pretty awesome. But what happened to actually putting thought and creativity into a gift?

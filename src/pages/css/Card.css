@@ -113,3 +113,8 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+.card-main-actions .add-disabled {
+    border-color: #D3D3D3;
+    opacity: .5;
+}

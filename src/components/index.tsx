@@ -7,5 +7,6 @@ import Filter from "./Filter";
 import Recently from "./Recently";
 import FaqList from "./FaqList";
 import FaqItem from "./FaqItem/FaqItem";
+import BagItem from "./BagItem/BagItem";
 
-export {Header, Main, Footer, ProductsItem, ProductsList, Filter, Recently, FaqList, FaqItem}
+export {Header, Main, Footer, ProductsItem, ProductsList, Filter, Recently, FaqList, FaqItem, BagItem}

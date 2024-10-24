@@ -1,0 +1,34 @@
+.bag_item {
+    padding-top: 31px;
+    padding-bottom: 28px;
+    padding-left: 301px;
+    padding-right: 285px;
+    border-top: 0.5px solid #C4C4C4;
+  /*  border-bottom: 0.5px solid #C4C4C4;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bag_item_title {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+.bag_item_price {
+    font-weight: 500;
+    font-size: 24px;
+    color: #363636;
+}
+
+.bag_item_remove {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+    color: #979797;
+}
